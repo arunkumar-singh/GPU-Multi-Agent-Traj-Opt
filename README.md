@@ -5,6 +5,8 @@ The paper has been submitted to Robotics and Automation Letters with ICRA 2021 o
 
 Source-codes will start appearing here from 19th October. 
 
+Contacts: Arun Kumar Singh (aks1812@gmail.com), Fatemeh Rastgar (fatemeh@ut.ee)
+
 Requirements:
 
 1. CUPY (https://docs.cupy.dev/en/stable/install.html)
@@ -20,6 +22,16 @@ Requirements:
 
 Running on Google Colab:
 Google Colab automatically comes with CUPY and Jax support. So the codes can be run on colab after clonig the repo.
+
+
+How to run the code:
+
+1. For each benchmark, first inverse_matrix_computation.py code in matrix_computation subfolder should be run. These generates the different matrices and inverses required for multi-agent trajectory optimization.
+
+2. The main file to be run for each benchmark is main_x_y.py where x can be 16, 32, 64 etc and y is either cupy or jax. Running this code will create the trajectory mat files for different agents.
+
+3. The trajectory can be visualized by running new_plot.py
+
 
 
 
