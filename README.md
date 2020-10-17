@@ -15,7 +15,7 @@ Requirements:
 
 4. Jax-Numpy.
 
-5. The code has been tested with CUDA version 10.1 and 10.2 on RTX-2080 (8GB) i7-8750 deskptop computer with 32 GB RAM. It has also been tested on Jetson TX2.
+5. The code has been tested with CUDA version 10.1 and 10.2 on RTX-2080 (8GB) i7-8750 deskptop computer with 32 GB RAM and Nvidia Jetson TX2.
 
 
 
