@@ -7,7 +7,7 @@ Source-codes will start appearing here from 19th October.
 
 Requirements:
 
-1. CUPY
+1. CUPY (https://docs.cupy.dev/en/stable/install.html)
 
 2. Numpy.
 
