@@ -136,7 +136,6 @@ x_2, y_2, z_2 = wrapper_32_robots.main_jax(  x_init_2, y_init_2, z_init_2, x_fin
 
 print('comp time for 2 benchmarks with 2 static obstacles =', time.time()-start)
 
-
 scipy.io.savemat('x_1.mat', {'x_1': x_1})
 scipy.io.savemat('y_1.mat', {'y_1': y_1})
 scipy.io.savemat('z_1.mat', {'z_1': z_1})

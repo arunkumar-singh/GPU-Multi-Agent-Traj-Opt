@@ -13,7 +13,6 @@ from scipy.io import loadmat
 import wrapper_16_robots
 import init_final_pos
 
-
 maxiter = 200
 
 a_1 = 0.64
