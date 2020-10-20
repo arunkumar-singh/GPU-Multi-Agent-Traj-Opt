@@ -93,7 +93,7 @@ z_centre_1 = points_z_init_obs_1
 x_centre_2 = points_x_init_obs_2
 y_centre_2 = points_y_init_obs_2
 z_centre_2 = points_z_init_obs_2
- 
+
 x_centre_3 = points_x_init_obs_3
 y_centre_3 = points_y_init_obs_3
 z_centre_3 = points_z_init_obs_3
@@ -105,7 +105,7 @@ z_centre_4 = points_z_init_obs_4
 x_centre_5 = points_x_init_obs_5
 y_centre_5 = points_y_init_obs_5
 z_centre_5 = points_z_init_obs_5
- 
+
 
 x_obs_static_1 = np.vstack((x_centre_1[0]*np.ones(num_horizon), x_centre_1[1]*np.ones(num_horizon)))
 y_obs_static_1 = np.vstack((y_centre_1[0]*np.ones(num_horizon), y_centre_1[1]*np.ones(num_horizon)))
@@ -216,7 +216,7 @@ x_4, y_4, z_4 = wrapper_16_robots.main_cupy(  x_init_4, y_init_4, z_init_4, x_fi
 
 x_5, y_5, z_5 = wrapper_16_robots.main_cupy(  x_init_5, y_init_5, z_init_5, x_fin_5, y_fin_5, z_fin_5, a_5, b_5, c_5, cost_mat_inv_x_1, cost_mat_inv_x_2, cost_mat_inv_x_3, cost_mat_inv_x_4, cost_mat_inv_x_5, cost_mat_inv_x_6, cost_mat_inv_x_7, cost_mat_inv_x_8, cost_mat_inv_x_9, cost_mat_inv_x_10, cost_mat_inv_y_1, cost_mat_inv_y_2, cost_mat_inv_y_3, cost_mat_inv_y_4, cost_mat_inv_y_5, cost_mat_inv_y_6, cost_mat_inv_y_7, cost_mat_inv_y_8, cost_mat_inv_y_9, cost_mat_inv_y_10, cost_mat_inv_z_1, cost_mat_inv_z_2, cost_mat_inv_z_3, cost_mat_inv_z_4, cost_mat_inv_z_5, cost_mat_inv_z_6, cost_mat_inv_z_7, cost_mat_inv_z_8, cost_mat_inv_z_9, cost_mat_inv_z_10, Ax_eq_obs,  bx_eq_obs_5, by_eq_obs_5, bz_eq_obs_5, Ax_eq, rho_w_alpha_init, a_elipse_5, b_elipse_5, c_elipse_5  )
 
-print('comp time for 3 benchmarks =', time.time()-start)
+print('comp time for 5 benchmarks =', time.time()-start)
 
 
 x_1 = cp.asnumpy(x_1,stream=None,order='C')
@@ -260,5 +260,3 @@ scipy.io.savemat('z_4.mat', {'z_4': z_4})
 scipy.io.savemat('x_5.mat', {'x_5': x_5})
 scipy.io.savemat('y_5.mat', {'y_5': y_5})
 scipy.io.savemat('z_5.mat', {'z_5': z_5})
-
-
