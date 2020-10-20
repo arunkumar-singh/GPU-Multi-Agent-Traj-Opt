@@ -18,11 +18,11 @@ import wrapper_32_robots
 # start = time.time()
 maxiter = 200
 
-a_1 = 0.34
+a_1 = 0.34 ########## size of the agents for first benchmark
 b_1 = 0.34
 c_1 = 0.34
 
-a_2 = 1.24
+a_2 = 1.24 ################ size of the agents for second benchmark
 b_2 = 1.24
 c_2 = 1.24
 
@@ -134,7 +134,7 @@ x_1, y_1, z_1 = wrapper_32_robots.main_jax(  x_init_1, y_init_1, z_init_1, x_fin
 
 x_2, y_2, z_2 = wrapper_32_robots.main_jax(  x_init_2, y_init_2, z_init_2, x_fin_2, y_fin_2, z_fin_2, a_2, b_2, c_2, cost_mat_inv_x_1, cost_mat_inv_x_2, cost_mat_inv_x_3, cost_mat_inv_x_4, cost_mat_inv_x_5, cost_mat_inv_x_6, cost_mat_inv_x_7, cost_mat_inv_x_8, cost_mat_inv_x_9, cost_mat_inv_x_10, cost_mat_inv_y_1, cost_mat_inv_y_2, cost_mat_inv_y_3, cost_mat_inv_y_4, cost_mat_inv_y_5, cost_mat_inv_y_6, cost_mat_inv_y_7, cost_mat_inv_y_8, cost_mat_inv_y_9, cost_mat_inv_y_10, cost_mat_inv_z_1, cost_mat_inv_z_2, cost_mat_inv_z_3, cost_mat_inv_z_4, cost_mat_inv_z_5, cost_mat_inv_z_6, cost_mat_inv_z_7, cost_mat_inv_z_8, cost_mat_inv_z_9, cost_mat_inv_z_10, Ax_eq_obs,  bx_eq_obs_2, by_eq_obs_2, bz_eq_obs_2, Ax_eq, rho_w_alpha_init, a_elipse_2, b_elipse_2, c_elipse_2  )
 
-print('comp time for 2 benchmarks =', time.time()-start)
+print('comp time for 2 benchmarks with 2 static obstacles =', time.time()-start)
 
 
 scipy.io.savemat('x_1.mat', {'x_1': x_1})
