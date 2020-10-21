@@ -93,7 +93,7 @@ z_centre_1 = points_z_init_obs_1
 x_centre_2 = points_x_init_obs_2
 y_centre_2 = points_y_init_obs_2
 z_centre_2 = points_z_init_obs_2
- 
+
 x_centre_3 = points_x_init_obs_3
 y_centre_3 = points_y_init_obs_3
 z_centre_3 = points_z_init_obs_3
@@ -105,7 +105,7 @@ z_centre_4 = points_z_init_obs_4
 x_centre_5 = points_x_init_obs_5
 y_centre_5 = points_y_init_obs_5
 z_centre_5 = points_z_init_obs_5
- 
+
 
 x_obs_static_1 = np.vstack((x_centre_1[0]*np.ones(num_horizon), x_centre_1[1]*np.ones(num_horizon)))
 y_obs_static_1 = np.vstack((y_centre_1[0]*np.ones(num_horizon), y_centre_1[1]*np.ones(num_horizon)))
@@ -260,5 +260,3 @@ scipy.io.savemat('z_4.mat', {'z_4': z_4})
 scipy.io.savemat('x_5.mat', {'x_5': x_5})
 scipy.io.savemat('y_5.mat', {'y_5': y_5})
 scipy.io.savemat('z_5.mat', {'z_5': z_5})
-
-
