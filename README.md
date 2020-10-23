@@ -21,7 +21,7 @@ Requirements:
 
 
 Running on Google Colab:
-Google Colab automatically comes with CUPY and Jax support. So the codes can be run on colab after clonig the repo.
+Google Colab automatically comes with CUPY and Jax support. So the codes can be run on colab after clonig the repo. A detailed instructions with examples can be found here (https://colab.research.google.com/drive/1soJXHHgqziwHlarbkS6DhLiLTuUravOf?usp=sharing)
 
 
 How to run the code:
