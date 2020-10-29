@@ -75,7 +75,7 @@ x_1, y_1, z_1 = wrapper_8_robots.main_cupy(  x_init, y_init, z_init, x_fin, y_fi
 
 
 
-print('comp time for 2 benchmarks =', time.time()-start)
+print('comp time for 1 benchmarks =', time.time()-start)
 
 
 
@@ -104,13 +104,3 @@ scipy.io.savemat('z_1.mat', {'z_1': z_1})
 scipy.io.savemat('a_1.mat', {'a_1': a_1})
 scipy.io.savemat('b_1.mat', {'b_1': b_1})
 scipy.io.savemat('c_1.mat', {'c_1': c_1})
-
-
-
-
-
-
-
-
-
-
