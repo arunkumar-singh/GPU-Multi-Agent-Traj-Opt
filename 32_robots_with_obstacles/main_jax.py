@@ -189,7 +189,7 @@ x_3, y_3, z_3 = wrapper_32_robots.main_jax(  x_init_3, y_init_3, z_init_3, x_fin
 
 x_4, y_4, z_4 = wrapper_32_robots.main_jax(  x_init_4, y_init_4, z_init_4, x_fin_4, y_fin_4, z_fin_4, a_4, b_4, c_4, cost_mat_inv_x_1, cost_mat_inv_x_2, cost_mat_inv_x_3, cost_mat_inv_x_4, cost_mat_inv_x_5, cost_mat_inv_x_6, cost_mat_inv_x_7, cost_mat_inv_x_8, cost_mat_inv_x_9, cost_mat_inv_x_10, cost_mat_inv_y_1, cost_mat_inv_y_2, cost_mat_inv_y_3, cost_mat_inv_y_4, cost_mat_inv_y_5, cost_mat_inv_y_6, cost_mat_inv_y_7, cost_mat_inv_y_8, cost_mat_inv_y_9, cost_mat_inv_y_10, cost_mat_inv_z_1, cost_mat_inv_z_2, cost_mat_inv_z_3, cost_mat_inv_z_4, cost_mat_inv_z_5, cost_mat_inv_z_6, cost_mat_inv_z_7, cost_mat_inv_z_8, cost_mat_inv_z_9, cost_mat_inv_z_10, Ax_eq_obs,  bx_eq_obs_4, by_eq_obs_4, bz_eq_obs_4, Ax_eq, rho_w_alpha_init, a_elipse_4, b_elipse_4, c_elipse_4  )
 
-print('comp time for 2 benchmarks with 4 static obstacles =', time.time()-start)
+print('comp time for 4 benchmarks with 2 static obstacles =', time.time()-start)
 
 scipy.io.savemat('x_1.mat', {'x_1': x_1})
 scipy.io.savemat('y_1.mat', {'y_1': y_1})
@@ -223,5 +223,3 @@ scipy.io.savemat('z_obs_static_3.mat', {'z_obs_static_3': z_obs_static_3})
 scipy.io.savemat('x_obs_static_4.mat', {'x_obs_static_4': x_obs_static_4})
 scipy.io.savemat('y_obs_static_4.mat', {'y_obs_static_4': y_obs_static_4})
 scipy.io.savemat('z_obs_static_4.mat', {'z_obs_static_4': z_obs_static_4})
-
-
