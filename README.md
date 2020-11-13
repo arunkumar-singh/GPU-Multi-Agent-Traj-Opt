@@ -1,5 +1,5 @@
 # GPU-Multi-Agent-Traj-Opt
-Repository associated with the paper "GPU Accelerated Convex Approximations for Fast Multi-Agent TrajectoryOptimization". 
+Repository associated with the paper "GPU Accelerated Convex Approximations for Fast Multi-Agent TrajectoryOptimization". Arxiv pre-print can be found here (https://arxiv.org/abs/2011.04240) 
 
 The paper has been submitted to Robotics and Automation Letters with ICRA 2021 option.
 
